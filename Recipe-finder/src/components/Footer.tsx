@@ -14,13 +14,13 @@ const Footer = () => {
       method: "POST",
       body: formData,
       headers: {
-        "Accept": "application/json", // 👈 important
+        "Accept": "application/json", 
       },
     });
 
     if (res.ok) {
-      e.target.reset(); // clear input
-      window.location.href = "/thank_you"; // redirect back to your app (optional)
+      e.target.reset(); 
+      window.location.href = "/thank_you"; 
     } else {
       alert("❌ Something went wrong. Please try again.");
     }
@@ -34,7 +34,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-warm-brown text-white py-20">
-      <div className="container mx-auto px-12">
+      <div className="container mx-auto px-4 sm:px-6 md:px-20">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Brand Column */}
           <div>

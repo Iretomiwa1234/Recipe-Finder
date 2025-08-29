@@ -38,7 +38,7 @@ const ContactSection = () => {
 
   return (
     <section className="py-20 bg-cream">
-      <div className="container mx-auto px-12">
+      <div className="container mx-auto px-4 sm:px-6 md:px-20">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-warm-brown mb-2">Get in Touch</h2>
           <hr className="w-[6%] h-[3px] mb-4 mx-auto bg-[hsl(var(--primary))] rounded-full" />

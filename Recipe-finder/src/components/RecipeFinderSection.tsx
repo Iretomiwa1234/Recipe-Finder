@@ -3,7 +3,7 @@ import RecipeOwner from "@/assets/recipe.png";
 const RecipeFinderSection = () => {
   return (
     <section className="pt-20 bg-cream">
-      <div className="container mx-auto px-12">
+      <div className="container mx-auto px-4 sm:px-6 md:px-20">
         <div className="flex flex-col-reverse md:flex-row gap-12 items-center">
           <div className="relative col-md-6">
             <img 

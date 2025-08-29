@@ -44,7 +44,7 @@ const RecipeGrid = () => {
 
   return (
     <section className="py-20 mb-6">
-      <div className="container mx-auto px-12">
+      <div className="container mx-auto px-4 sm:px-6 md:px-20">
         {/* Section header */}
         <div className="text-center mb-10">
           <h2 className="text-4xl font-bold text-warm-brown mb-2">
