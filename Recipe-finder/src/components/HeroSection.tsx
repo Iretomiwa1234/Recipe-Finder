@@ -30,7 +30,7 @@ const HeroSection = () => {
             variant="outline" 
             className="border-primary text-primary hover:bg-primary hover:text-white px-8 py-2 text-lg"
           >
-            <a href="/signup">Favorite Recipes</a>
+            <a href="/login">Favorite Recipes</a>
           </Button>
         </div>
       </div>

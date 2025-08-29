@@ -19,9 +19,8 @@ const Footer = () => {
     });
 
     if (res.ok) {
-      alert("✅ Subscription successful!");
       e.target.reset(); // clear input
-      window.location.href = "/"; // redirect back to your app (optional)
+      window.location.href = "/thank_you"; // redirect back to your app (optional)
     } else {
       alert("❌ Something went wrong. Please try again.");
     }
@@ -93,7 +92,7 @@ const Footer = () => {
               Subscribe to receive updates on new recipes and cooking tips.
             </p>
             <form onSubmit={handleNewsletterSubmit} className="space-y-2">
-              <input type="hidden" name="_next" value="/recipe" />
+              <input type="hidden" name="_next" value="/thank_you" />
   <input type="hidden" name="_captcha" value="false" />
               <input 
                 type="email" 

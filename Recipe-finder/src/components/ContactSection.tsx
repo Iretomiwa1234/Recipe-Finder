@@ -25,7 +25,7 @@ const ContactSection = () => {
       if (res.ok) {
         alert("✅ Message sent successfully!");
         e.target.reset(); // clear form
-        window.location.href = "/recipe"; // optional redirect
+        window.location.href = "/thank_you"; // optional redirect
       } else {
         alert("❌ Something went wrong. Please try again.");
       }
