@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom"; 
 import { Card, CardContent } from "@/components/ui/card";
 
+
+
 const RecipeGrid = () => {
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState("");
@@ -39,9 +41,6 @@ const RecipeGrid = () => {
     }
     return ingredients;
   };
-
-  const displayedRecipes =
-  window.innerWidth < 768 ? recipes.slice(0, 6) : recipes.slice(0, 12);
 
   return (
     <section className="py-20 mb-6">
@@ -135,7 +134,7 @@ const RecipeGrid = () => {
           </div>
         ) : (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {displayedRecipes.map((recipe) => (
+            {recipes.map((recipe) => (
               <Card
                 key={recipe.idMeal}
                 className="group hover:shadow-xl transition-all duration-300 cursor-pointer overflow-hidden"
